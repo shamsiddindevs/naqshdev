@@ -1,24 +1,23 @@
 "use client";
 
-import React, { forwardRef, useRef } from "react";
+import React, {forwardRef, useRef} from "react";
 
-import { cn } from "@/lib/utils";
-import { AnimatedBeam } from "@/components/magicui/animated-beam";
+import {cn} from "@/lib/utils";
+import {AnimatedBeam} from "@/components/magicui/animated-beam";
 import Image from "next/image";
-import { PiFigmaLogo } from "react-icons/pi";
+import {PiFigmaLogo} from "react-icons/pi";
 
 const Circle = forwardRef<
   HTMLDivElement,
-  { className?: string; children?: React.ReactNode }
->(({ className, children }, ref) => {
+  {className?: string; children?: React.ReactNode}
+>(({className, children}, ref) => {
   return (
     <div
       ref={ref}
       className={cn(
         "z-10 flex size-12 items-center justify-center rounded-full border-2 border-border  p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
-        className,
-      )}
-    >
+        className
+      )}>
       {children}
     </div>
   );
@@ -44,10 +43,9 @@ export function AnimatedBeamMultipleOutputDemo({
     <div
       className={cn(
         "relative flex xl:h-[500px] w-full items-center justify-center overflow-hidden  p-10 ",
-        className,
+        className
       )}
-      ref={containerRef}
-    >
+      ref={containerRef}>
       <div className="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg">
         <div className="flex flex-col justify-center gap-2">
           <Circle ref={div1Ref}>
@@ -57,7 +55,7 @@ export function AnimatedBeamMultipleOutputDemo({
             <Icons.googleDocs />
           </Circle>
           <Circle ref={div3Ref}>
-          <Image
+            <Image
               src={"/logo/figma.png"}
               width={10000}
               height={10000}
@@ -73,17 +71,21 @@ export function AnimatedBeamMultipleOutputDemo({
           </Circle>
         </div>
         <div className="flex flex-col justify-center">
-          <Circle ref={div6Ref} className="size-16 bg-white">
-          <Image
-          src={'/logo/logo.webp'}
-          height={1000}
-          width={1000}
-          alt="logo"
-          />
+          <Circle
+            ref={div6Ref}
+            className="size-16 bg-white">
+            <Image
+              src={"/logo/p"}
+              height={1000}
+              width={1000}
+              alt="logo"
+            />
           </Circle>
         </div>
         <div className="flex flex-col justify-center">
-          <Circle ref={div7Ref} className="bg-white">
+          <Circle
+            ref={div7Ref}
+            className="bg-white">
             <Icons.user />
           </Circle>
         </div>
@@ -130,8 +132,7 @@ const Icons = {
       height="100"
       viewBox="0 0 100 100"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path
         d="M6.017 4.313l55.333 -4.087c6.797 -0.583 8.543 -0.19 12.817 2.917l17.663 12.443c2.913 2.14 3.883 2.723 3.883 5.053v68.243c0 4.277 -1.553 6.807 -6.99 7.193L24.467 99.967c-4.08 0.193 -6.023 -0.39 -8.16 -3.113L3.3 79.94c-2.333 -3.113 -3.3 -5.443 -3.3 -8.167V11.113c0 -3.497 1.553 -6.413 6.017 -6.8z"
         fill="#ffffff"
@@ -150,8 +151,7 @@ const Icons = {
       width="100"
       height="100"
       viewBox="0 0 87.3 78"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path
         d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z"
         fill="#0066da"
@@ -184,8 +184,7 @@ const Icons = {
       width="47px"
       height="65px"
       viewBox="0 0 47 65"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <defs>
         <path
           d="M29.375,0 L4.40625,0 C1.9828125,0 0,1.99431818 0,4.43181818 L0,60.5681818 C0,63.0056818 1.9828125,65 4.40625,65 L42.59375,65 C45.0171875,65 47,63.0056818 47,60.5681818 L47,17.7272727 L29.375,0 Z"
@@ -200,10 +199,17 @@ const Icons = {
           y1="8.58610612%"
           x2="50.0053945%"
           y2="100.013939%"
-          id="linearGradient-5"
-        >
-          <stop stopColor="#1A237E" stopOpacity="0.2" offset="0%" />
-          <stop stopColor="#1A237E" stopOpacity="0.02" offset="100%" />
+          id="linearGradient-5">
+          <stop
+            stopColor="#1A237E"
+            stopOpacity="0.2"
+            offset="0%"
+          />
+          <stop
+            stopColor="#1A237E"
+            stopOpacity="0.02"
+            offset="100%"
+          />
         </linearGradient>
         <path
           d="M29.375,0 L4.40625,0 C1.9828125,0 0,1.99431818 0,4.43181818 L0,60.5681818 C0,63.0056818 1.9828125,65 4.40625,65 L42.59375,65 C45.0171875,65 47,63.0056818 47,60.5681818 L47,17.7272727 L29.375,0 Z"
@@ -232,10 +238,17 @@ const Icons = {
           fy="2.71744318%"
           r="161.248516%"
           gradientTransform="translate(0.031680,0.027174),scale(1.000000,0.723077),translate(-0.031680,-0.027174)"
-          id="radialGradient-16"
-        >
-          <stop stopColor="#FFFFFF" stopOpacity="0.1" offset="0%" />
-          <stop stopColor="#FFFFFF" stopOpacity="0" offset="100%" />
+          id="radialGradient-16">
+          <stop
+            stopColor="#FFFFFF"
+            stopOpacity="0.1"
+            offset="0%"
+          />
+          <stop
+            stopColor="#FFFFFF"
+            stopOpacity="0"
+            offset="100%"
+          />
         </radialGradient>
       </defs>
       <g
@@ -243,15 +256,22 @@ const Icons = {
         stroke="none"
         strokeWidth="1"
         fill="none"
-        fillRule="evenodd"
-      >
+        fillRule="evenodd">
         <g transform="translate(-451.000000, -463.000000)">
-          <g id="Hero" transform="translate(0.000000, 63.000000)">
-            <g id="Personal" transform="translate(277.000000, 309.000000)">
-              <g id="Docs-icon" transform="translate(174.000000, 91.000000)">
+          <g
+            id="Hero"
+            transform="translate(0.000000, 63.000000)">
+            <g
+              id="Personal"
+              transform="translate(277.000000, 309.000000)">
+              <g
+                id="Docs-icon"
+                transform="translate(174.000000, 91.000000)">
                 <g id="Group">
                   <g id="Clipped">
-                    <mask id="mask-2" fill="white">
+                    <mask
+                      id="mask-2"
+                      fill="white">
                       <use xlinkHref="#path-1" />
                     </mask>
                     <g id="SVGID_1_" />
@@ -264,7 +284,9 @@ const Icons = {
                     />
                   </g>
                   <g id="Clipped">
-                    <mask id="mask-4" fill="white">
+                    <mask
+                      id="mask-4"
+                      fill="white">
                       <use xlinkHref="#path-3" />
                     </mask>
                     <g id="SVGID_1_" />
@@ -273,11 +295,12 @@ const Icons = {
                       fill="url(#linearGradient-5)"
                       fillRule="nonzero"
                       mask="url(#mask-4)"
-                      points="30.6638281 16.4309659 47 32.8582386 47 17.7272727"
-                    ></polygon>
+                      points="30.6638281 16.4309659 47 32.8582386 47 17.7272727"></polygon>
                   </g>
                   <g id="Clipped">
-                    <mask id="mask-7" fill="white">
+                    <mask
+                      id="mask-7"
+                      fill="white">
                       <use xlinkHref="#path-6" />
                     </mask>
                     <g id="SVGID_1_" />
@@ -290,11 +313,15 @@ const Icons = {
                     />
                   </g>
                   <g id="Clipped">
-                    <mask id="mask-9" fill="white">
+                    <mask
+                      id="mask-9"
+                      fill="white">
                       <use xlinkHref="#path-8" />
                     </mask>
                     <g id="SVGID_1_" />
-                    <g id="Group" mask="url(#mask-9)">
+                    <g
+                      id="Group"
+                      mask="url(#mask-9)">
                       <g transform="translate(26.437500, -2.954545)">
                         <path
                           d="M2.9375,2.95454545 L2.9375,16.25 C2.9375,18.6985795 4.90929688,20.6818182 7.34375,20.6818182 L20.5625,20.6818182 L2.9375,2.95454545 Z"
@@ -306,7 +333,9 @@ const Icons = {
                     </g>
                   </g>
                   <g id="Clipped">
-                    <mask id="mask-11" fill="white">
+                    <mask
+                      id="mask-11"
+                      fill="white">
                       <use xlinkHref="#path-10" />
                     </mask>
                     <g id="SVGID_1_" />
@@ -320,7 +349,9 @@ const Icons = {
                     />
                   </g>
                   <g id="Clipped">
-                    <mask id="mask-13" fill="white">
+                    <mask
+                      id="mask-13"
+                      fill="white">
                       <use xlinkHref="#path-12" />
                     </mask>
                     <g id="SVGID_1_" />
@@ -334,7 +365,9 @@ const Icons = {
                     />
                   </g>
                   <g id="Clipped">
-                    <mask id="mask-15" fill="white">
+                    <mask
+                      id="mask-15"
+                      fill="white">
                       <use xlinkHref="#path-14" />
                     </mask>
                     <g id="SVGID_1_" />
@@ -367,8 +400,7 @@ const Icons = {
       height="28"
       viewBox="0 0 244 66"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path
         d="M57.1877 45.2253L57.1534 45.1166L78.809 25.2914V15.7391H44.0663V25.2914H64.8181L64.8524 25.3829L43.4084 45.2253V54.7775H79.1579V45.2253H57.1877Z"
         fill="#201515"
@@ -397,7 +429,10 @@ const Icons = {
         d="M146.201 14.6695C142.357 14.6695 139.268 15.8764 136.935 18.2902C135.207 20.0786 133.939 22.7479 133.131 26.2981H132.771L131.295 15.7563H121.657V66H132.942V45.3054H133.354C133.698 46.6852 134.181 48.0267 134.795 49.3093C135.75 51.3986 137.316 53.1496 139.286 54.3314C141.328 55.446 143.629 56.0005 145.955 55.9387C150.68 55.9387 154.277 54.0988 156.748 50.419C159.219 46.7392 160.455 41.6046 160.455 35.0153C160.455 28.6509 159.259 23.6689 156.869 20.0691C154.478 16.4694 150.922 14.6695 146.201 14.6695ZM147.345 42.9602C146.029 44.8668 143.97 45.8201 141.167 45.8201C140.012 45.8735 138.86 45.6507 137.808 45.1703C136.755 44.6898 135.832 43.9656 135.116 43.0574C133.655 41.2233 132.927 38.7122 132.931 35.5243V34.7807C132.931 31.5432 133.659 29.0646 135.116 27.3448C136.572 25.625 138.59 24.7747 141.167 24.7937C144.02 24.7937 146.092 25.6994 147.385 27.5107C148.678 29.322 149.324 31.8483 149.324 35.0896C149.332 38.4414 148.676 41.065 147.356 42.9602H147.345Z"
         fill="#201515"
       />
-      <path d="M39.0441 45.2253H0V54.789H39.0441V45.2253Z" fill="#FF4F00" />
+      <path
+        d="M39.0441 45.2253H0V54.789H39.0441V45.2253Z"
+        fill="#FF4F00"
+      />
     </svg>
   ),
   messenger: () => (
@@ -405,23 +440,35 @@ const Icons = {
       width="100"
       height="100"
       viewBox="0 0 48 48"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <radialGradient
         id="8O3wK6b5ASW2Wn6hRCB5xa_YFbzdUk7Q3F8_gr1"
         cx="11.087"
         cy="7.022"
         r="47.612"
         gradientTransform="matrix(1 0 0 -1 0 50)"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset="0" stopColor="#1292ff"></stop>
-        <stop offset=".079" stopColor="#2982ff"></stop>
-        <stop offset=".23" stopColor="#4e69ff"></stop>
-        <stop offset=".351" stopColor="#6559ff"></stop>
-        <stop offset=".428" stopColor="#6d53ff"></stop>
-        <stop offset=".754" stopColor="#df47aa"></stop>
-        <stop offset=".946" stopColor="#ff6257"></stop>
+        gradientUnits="userSpaceOnUse">
+        <stop
+          offset="0"
+          stopColor="#1292ff"></stop>
+        <stop
+          offset=".079"
+          stopColor="#2982ff"></stop>
+        <stop
+          offset=".23"
+          stopColor="#4e69ff"></stop>
+        <stop
+          offset=".351"
+          stopColor="#6559ff"></stop>
+        <stop
+          offset=".428"
+          stopColor="#6d53ff"></stop>
+        <stop
+          offset=".754"
+          stopColor="#df47aa"></stop>
+        <stop
+          offset=".946"
+          stopColor="#ff6257"></stop>
       </radialGradient>
       <path
         fill="url(#8O3wK6b5ASW2Wn6hRCB5xa_YFbzdUk7Q3F8_gr1)"
@@ -449,10 +496,13 @@ const Icons = {
       fill="none"
       stroke="#000000"
       strokeWidth="2"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-      <circle cx="12" cy="7" r="4" />
+      <circle
+        cx="12"
+        cy="7"
+        r="4"
+      />
     </svg>
   ),
 };

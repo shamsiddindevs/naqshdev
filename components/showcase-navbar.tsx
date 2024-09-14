@@ -35,7 +35,7 @@ xl:w-4/5
           alt="Bird Logo"
           width={1000}
           height={1000}
-          className="w-20"
+          className="w-14"
         />
       </Link>
 
@@ -46,7 +46,7 @@ xl:w-4/5
             className="
           hover:text-orange-600
           ">
-            Namoyish
+            Portfolio
           </Link>
           <Link
             href="/"
@@ -69,9 +69,7 @@ xl:w-4/5
       <div className="flex items-center gap-x-4">
         <a
           href="tel:5193191562"
-          className="hidden xl:flex">
-          
-        </a>
+          className="hidden xl:flex"></a>
 
         <Link
           href={"/meeting"}

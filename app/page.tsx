@@ -75,7 +75,7 @@ export default function Home() {
             alt="Logo"
             width={1000}
             height={1000}
-            className="w-20"
+            className="w-14"
           />
         </Link>
 
@@ -84,7 +84,7 @@ export default function Home() {
             <Link
               href={"/showcase"}
               className="hover:text-orange-600">
-              Namoyish
+              Portfolio
             </Link>
 
             <ScrollLink
@@ -122,15 +122,16 @@ export default function Home() {
   px-6
   text-lg 
   hover:bg-[#abcbff]
+hover:text-white
   rounded-[6px]
   border-2
   border-black
-  text-white
-  bg-[#121212]
+  text-black
+  bg-orange-600
   transition
   duration-200
      hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] ">
-            Muloqotga chaqirish
+            Aloqaga chiqish
           </Link>
         </div>
       </Element>
@@ -163,21 +164,23 @@ export default function Home() {
             md:px-16
       md:text-xl
       hover:bg-[#abcbff] 
+      hover:text-white
       rounded-[6px]
       border-2 
       border-black 
       dark:border-white 
-       bg-[#121212] 
-       text-white 
+       bg-orange-600 
+       text-black
        transition 
        duration-200 
        hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] ">
-              Muloqotga chaqirish
+              Aloqaga chiqish
             </Link>
             <Link
               href={"/showcase"}
               className="
-              bg-white
+              bg-blue-900
+              text-white
    py-3 
    px-10
    md:px-16
@@ -186,7 +189,7 @@ export default function Home() {
         border-black
         rounded-[6px]
         hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]">
-              Namoyish
+              Portfolio
             </Link>
           </div>
 
@@ -398,7 +401,7 @@ export default function Home() {
               src={"/logo/logo.webp"}
               width={10000}
               height={10000}
-              className="w-20"
+              className="w-14"
               alt="rasm"
             />{" "}
           </h1>

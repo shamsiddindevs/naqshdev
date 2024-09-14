@@ -10,7 +10,7 @@ const Footer = () => {
             src={"/logo/logo.webp"}
             width={10000}
             height={10000}
-            className="w-20"
+            className="w-14"
             alt="rasm"
           />{" "}
         </h1>
